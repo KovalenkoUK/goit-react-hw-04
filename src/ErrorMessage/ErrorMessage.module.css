@@ -1,6 +1,6 @@
-.error {
-    color: red;
-    text-align: center;
-    padding: 20px;
-  }
-  
+.ErrorMessage {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}

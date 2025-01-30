@@ -1,12 +1,17 @@
-import { useState } from 'react';
-import styles from './SearchBar.module.css';
+import React, { useState } from 'react';
+import './SearchBar.module.css';
 
-export default function SearchBar({ onSubmit }) {
+const SearchBar = ({ onSubmit }) => {
   const [query, setQuery] = useState('');
 
-  const handleSubmit = e => {
+  const handleChange = (e) => {
+    setQuery(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (query.trim() === '') {
+      alert('Please enter a search query');
       return;
     }
     onSubmit(query);
@@ -14,18 +19,20 @@ export default function SearchBar({ onSubmit }) {
   };
 
   return (
-    <header className={styles.header}>
+    <header className="SearchBar">
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          value={query}
-          onChange={e => setQuery(e.target.value)}
-          placeholder="Search images and photos"
           autoComplete="off"
           autoFocus
+          placeholder="Search images and photos"
+          value={query}
+          onChange={handleChange}
         />
         <button type="submit">Search</button>
       </form>
     </header>
   );
-}
+};
+
+export default SearchBar;

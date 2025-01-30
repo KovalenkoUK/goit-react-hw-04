@@ -1,7 +1,8 @@
-.gallery {
+.ImageGallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 16px;
+  justify-content: center;
+  padding: 20px;
   list-style: none;
-  padding: 0;
 }

@@ -1,9 +1,12 @@
-import styles from './ImageCard.module.css';
+import React from 'react';
+import './ImageCard.module.css';
 
-export default function ImageCard({ image }) {
+const ImageCard = ({ image }) => {
   return (
-    <div className={styles.card}>
+    <div className="ImageCard">
       <img src={image.urls.small} alt={image.alt_description} />
     </div>
   );
-}
+};
+
+export default ImageCard;
