@@ -3,7 +3,7 @@ import viteLogo from '/vite.svg';
 import React from 'react';
 import { setupCounter } from './counter.js';
 
-document.querySelector('#app').innerHTML = `
+document.querySelector('#root').innerHTML = `
   <div>
     <a href="https://vite.dev" target="_blank">
       <img src="${viteLogo}" class="logo" alt="Vite logo" />
