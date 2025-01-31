@@ -2,7 +2,7 @@ import './style.css';
 import viteLogo from '/vite.svg';
 import { setupCounter } from './counter.js'; // імпорт функції setupCounter
 
-document.querySelector('#app').innerHTML = `
+document.querySelector('#root').innerHTML = `
   <div>
     <a href="https://vite.dev" target="_blank">
       <img src="${viteLogo}" class="logo" alt="Vite logo" />
