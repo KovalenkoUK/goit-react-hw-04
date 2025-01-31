@@ -1,17 +1,11 @@
-import './style.css';
-import viteLogo from '/vite.svg';
-import { setupCounter } from './counter.js';
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import "modern-normalize";
+import './style.css'
+import App from './App'
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './style.css';
-
-ReactDOM.render(
-  <React.StrictMode>
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-setupCounter(document.querySelector('#counter'));
+  </StrictMode>,
+)
