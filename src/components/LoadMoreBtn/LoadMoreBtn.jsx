@@ -1,10 +1,9 @@
-import React from 'react';
-import './LoadMoreBtn.module.css';
+import s from "./LoadMoreBtn.module.css";
 
-const LoadMoreBtn = ({ onClick }) => {
+const LoadMoreBtn = ({ setPage }) => {
   return (
-    <button className="LoadMoreBtn" onClick={onClick}>
-      Load more
+    <button className={s.moreBtn} onClick={() => setPage((prev) => prev + 1)}>
+      Show more images
     </button>
   );
 };

@@ -1,15 +1,14 @@
-.LoadMoreBtn {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .LoadMoreBtn:hover {
-    background-color: #0056b3;
-  }  
+.moreBtn {
+  font-family: inherit;
+  color: black;
+  font-size: 16px;
+  padding: 5px 8px;
+  border-radius: 8px;
+  border: none;
+  margin-left: 10px;
+  background-color: #aeb6bf;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}

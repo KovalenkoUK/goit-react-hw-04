@@ -1,10 +1,14 @@
-import React from 'react';
-import './ImageCard.module.css';
+import s from "./ImageCard.module.css";
 
-const ImageCard = ({ image }) => {
+const ImageCard = ({ item, openModal }) => {
   return (
-    <div className="ImageCard">
-      <img src={image.urls.small} alt={image.alt_description} />
+    <div className={s.imgContainer}>
+      <img
+        className={s.imgItem}
+        src={item.urls.small}
+        alt={item.alt_description}
+        onClick={() => openModal(item.urls.regular)}
+      />
     </div>
   );
 };
