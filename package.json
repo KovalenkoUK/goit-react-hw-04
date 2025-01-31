@@ -12,6 +12,7 @@
     "vite": "^6.0.5"
   },
   "dependencies": {
+    "@vitejs/plugin-react-swc": "^3.7.2",
     "all": "^0.0.0",
     "axios": "^1.7.9",
     "build": "^0.1.4",
