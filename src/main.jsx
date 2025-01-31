@@ -1,6 +1,7 @@
 import './style.css';
 import viteLogo from '/vite.svg';
-import { setupCounter } from './counter.js'; // імпорт функції setupCounter
+import { setupCounter } from './counter.js';
+import App from './App.jsx';
 
 document.querySelector('#App').innerHTML = `
   <div>
