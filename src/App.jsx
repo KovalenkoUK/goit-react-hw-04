@@ -15,6 +15,7 @@ export default function App() {
   const [page, setPage] = useState(1);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [targetImage, setTargetImage] = useState(null);
+  
 
   useEffect(() => {
     if (!query) return;
